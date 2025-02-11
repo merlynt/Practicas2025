@@ -1,0 +1,150 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    color: rgb(5, 17, 38);
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: rgb(5, 17, 38);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+section{
+    background-color: rgb(214, 234, 232);
+    pad: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+}
+span{
+    font-style: italic;
+    color: gray;
+}
+
+/*selector de clases*/
+.destacado{
+    color: rgb(255, 158, 13);
+    font-weight: bold;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 4px;
+}
+
+#importante{
+    color: red;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: floralwhite;
+    border-radius: 4px;
+}
+
+/*Selectores cominados*/
+.contenedor {
+    border: 1px darkgreen #bdc3c7;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.contenedor p{
+    background-color: #f7f9fa;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contenedor > p{
+    border: 2px solid #95a5a6;
+    border-radius: 4px;
+}
+
+/*Selectores de atributo*/
+input{
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    width: 200px;
+}
+
+input[type="password"]{
+    background-color: #fce4ec;
+    border-color: #e91e63;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+a[target="_blank"]{
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+}
+
+a[version="1.0"]{
+    text-transform: uppercase;
+}
+
+/*PseudoClase*/
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+li:nth-child(odd){
+    background-color: #e1f5e1;
+}
+.parrafo{
+    position: relative;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.parrafo::before{
+    content: "\1f31f";
+    color: yellow;
+    font-size: 1.2em;
+}
+
+.parrafo::after{
+    content: "\1f31f";
+    color: yellow;
+    font-size: 1.2em;
+}
